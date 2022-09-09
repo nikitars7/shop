@@ -1,0 +1,96 @@
+.footer {
+	padding: 45px 0px ;
+	background-color: #1c242a;
+}
+.footer__content {
+	display: flex;
+	@media (max-width: 767px) {
+		display: block;
+		text-align: center;
+	}
+}
+._container {}
+.footer__column {
+	&:last-child{
+		text-align: right;
+	}
+	&:first-child{
+		flex: 0 0 180px;
+	}
+}
+.footer__column_full{
+flex: 1 1 auto;
+}
+.footer__logo {
+	display: flex;
+	margin-bottom: 25px;
+	@media (max-width: 767px){
+		display: block;
+	}
+}
+.footer__info {
+	color:#bb9c66;
+	font-size: 14px;
+}
+.footer__menu {
+	padding: 0px 30px;
+}
+.footer__list {
+	display: flex;
+	flex-wrap:wrap;
+	li{
+		margin: 15px 15px 0px 0px;
+	}
+	@media (max-width: 767px){
+		justify-content: center;
+		margin: 15px 7px 0px 7px;
+	}
+}
+.footer__contacts{
+	padding: 15px 0px 0px 0px;
+	text-align: right;
+	display: flex;
+	flex-direction:column;
+	align-items: flex-end;
+	@media (max-width: 767px){
+		align-items: center;
+	}
+}
+.footer__link {
+	font-family:'Pfdin' ;
+	font-size: 14px;
+	font-weight: 500;
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+.footer__phone {
+	white-space: nowrap;
+	display: flex;
+	color:#bb9c66;
+	font-family: 'BravoRGRegular';
+	text-transform: uppercase;
+	font-size:50px;
+	small{
+		margin: 2px 5px 0px 0px;
+    font-size: 25px;
+	}
+	@media (max-width: 992px) {
+		font-size: 40px;
+		small{
+	
+    font-size: 20px;
+	}
+	}
+}
+.footer__callback {
+	color:#bb9c66;
+	background: url('../img/logo/stripe.png')left no-repeat;
+	padding: 0px 0px 0px 10px;
+	span{
+		border-bottom: 1px dashed
+	}
+}
